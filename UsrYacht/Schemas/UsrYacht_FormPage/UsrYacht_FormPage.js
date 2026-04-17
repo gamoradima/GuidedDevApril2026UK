@@ -211,6 +211,29 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Number",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrNumber_5f68mal",
+					"control": "$PDS_UsrNumber_5f68mal",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": true,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -292,6 +315,11 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"PDS_UsrComment_edhcws9": {
 						"modelConfig": {
 							"path": "PDS.UsrComment"
+						}
+					},
+					"PDS_UsrNumber_5f68mal": {
+						"modelConfig": {
+							"path": "PDS.UsrNumber"
 						}
 					}
 				}
