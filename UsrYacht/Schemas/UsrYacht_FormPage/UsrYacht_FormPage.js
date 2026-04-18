@@ -3,6 +3,22 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "CardContentWrapper",
+				"values": {
+					"padding": {
+						"left": "small",
+						"right": "small",
+						"top": "none",
+						"bottom": "none"
+					},
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Tabs",
 				"values": {
 					"styleType": "default",
@@ -100,6 +116,29 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "TicketPrice",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrTicketPrice_q9516pu",
+					"control": "$PDS_UsrTicketPrice_q9516pu",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"visible": false
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -255,6 +294,64 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "Country",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrCountry_4cuqqxx",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrCountry_4cuqqxx",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "City",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrCity_vw5h091",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrCity_vw5h091",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 7
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -341,6 +438,47 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"PDS_UsrNumber_5f68mal": {
 						"modelConfig": {
 							"path": "PDS.UsrNumber"
+						}
+					},
+					"PDS_UsrCountry_4cuqqxx": {
+						"modelConfig": {
+							"path": "PDS.UsrCountry"
+						}
+					},
+					"PDS_UsrCountry_4cuqqxx_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrCity_vw5h091": {
+						"modelConfig": {
+							"path": "PDS.UsrCity"
+						}
+					},
+					"PDS_UsrCity_vw5h091_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrTicketPrice_q9516pu": {
+						"modelConfig": {
+							"path": "PDS.UsrTicketPrice"
 						}
 					}
 				}
