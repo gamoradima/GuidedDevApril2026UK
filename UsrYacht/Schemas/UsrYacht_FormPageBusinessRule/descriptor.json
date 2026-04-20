@@ -4,6 +4,7 @@
     "Name": "UsrYacht_FormPageBusinessRule",
     "ModifiedOnUtc": "\/Date(1776423673000)\/",
     "ManagerName": "AddonSchemaManager",
-    "Caption": "Yacht form page (Business rules)"
+    "Caption": "Yacht form page (Business rules)",
+    "DependsOn": []
   }
 }
