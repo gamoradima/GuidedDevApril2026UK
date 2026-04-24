@@ -3,6 +3,10 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Yacht form page" />
+			<Item Name="LocalizableStrings.ActionsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.CalcAvgTicketPriceMenuItem_caption.Value" Value="Calculate average ticket price" />
+			<Item Name="LocalizableStrings.CalcAvgTicketPriceMenuItem_clicked_params_notificationText.Value" Value="Calculation process started" />
+			<Item Name="LocalizableStrings.CallMaxPriceWebServiceMenuItem_caption.Value" Value="Call max price web service" />
 			<Item Name="LocalizableStrings.CategoriesMultiSelect_label.Value" Value="Categories" />
 			<Item Name="LocalizableStrings.ExpansionPanel_uhebh5u_title.Value" Value="Yacht rental" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_ee96s65_caption.Value" Value="New" />
